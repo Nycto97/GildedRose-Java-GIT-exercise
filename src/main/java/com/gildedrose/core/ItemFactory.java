@@ -20,6 +20,7 @@ public class ItemFactory {
             case "Sulfuras, Hand of Ragnaros": return new LegendaryItem(name, sellIn, quality);
             case "Backstage passes to a TAFKAL80ETC concert": return new TicketItem(name, sellIn, quality);
             case "Conjured Mana Cake": return new ConjuredItem(name, sellIn, quality);
+            case "Test Item": return new SwitchItem(name, sellIn, quality);
         }
         throw new Exception("My apologies, but we are not selling this type of item with the name: " + name);
     }
